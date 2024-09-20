@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InspireMusic</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    
+    <div class="scene">
+        
+        <div class="parent_div">
+            <div id="logo">InpireMusic</div>
+            
+           <div class="rotate_img">
+            <img src="rotate_img.jpg" alt="cover_img" >
+           </div> 
+           <div class="audio_container">
+            
+           <audio src="Media/Jaan-Hai-Meri(PagalWorld).mp3" class="audio"></audio>
+                <div class="controls">
+                    <div class="song_duration_details">
+                        <p class="song_duration_rem">0:00</p>
+                        <input type="range" name="progressBar" id="progress_bar" value="0" max="100">
+                        <p class="song_duration_total"></p>
+                    </div>
+                    
+                    <div class="btn_control">
+                    
+                    
+                        <button type="button" class="previous_btn">
+                            <i class="fa-solid fa-backward" style="background-color: transparent;"></i>
+                        </button>
+                        <button type="button" class="pause_btn">
+                            <i class="fa-solid fa-play change_btn" style="background-color: transparent;"></i>
+                        </button>
+                        <button type="button" class="next_btn">
+                            <i class="fa-solid fa-forward" style="background-color: transparent;"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+           
+    
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
