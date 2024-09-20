@@ -92,3 +92,6 @@ audio.addEventListener("timeupdate", ()=>{
     
 })
 
+progress_bar.addEventListener("input", ()=> {
+    audio.currentTime = (progress_bar.value /100) * audio.duration;
+});
