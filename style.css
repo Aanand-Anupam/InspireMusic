@@ -34,6 +34,20 @@ animation: changebackground 1s ease infinite;
     border:0.1rem solid rgba(255, 255, 255, 0.1); 
     
 }
+@media (max-width:480px){
+    .parent_div{
+        height: 100%;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.25);
+        border:0.1rem solid rgba(255, 255, 255, 0.1); 
+        
+    }
+}
 .scene i{
     position: absolute;
     background: #fff;
