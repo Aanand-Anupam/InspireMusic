@@ -6,7 +6,7 @@ body{
     
   margin: 0;
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   background: linear-gradient(270deg, hsla(333, 100%, 53%, 1) 0%, hsla(312, 97%, 66%, 1) 50%, hsla(24, 93%, 57%, 1) 100%);
 animation: changebackground 1s ease infinite;
 }
@@ -36,8 +36,8 @@ animation: changebackground 1s ease infinite;
 }
 @media (max-width:480px){
     .parent_div{
-        height: 100%;
-        width:100%;
+        height: 80%;
+        width:90%;
         display: flex;
         flex-direction: column;
         
