@@ -53,6 +53,7 @@ animation: changebackground 1s ease infinite;
     background: #fff;
     border-radius: 50%;
     animation: animate  linear infinite;
+    /* animation-play-state: paused; */
 }
 @keyframes animate{
     0%{ opacity: 0;

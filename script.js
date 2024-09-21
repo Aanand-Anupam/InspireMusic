@@ -26,13 +26,20 @@ const partyColors = [
     "#FFFF66",  // Laser Lemon
     "#EE82EE"   // Bright Violet
   ];
-
+let scene = document.querySelector(".scene");
 function stars(){
-    let count = 200;
-    let scene = document.querySelector(".scene");
+    const mediaQuery = window.matchMedia("max-width:480px");
+    if(mediaQuery.matches){
+        var count = 200;
+    }else{
+        var count = 400;
+    }
+    
+    
     let i = 0;
     while(i < count){
         let stars = document.createElement("i");
+        
         let x = Math.floor(Math.random() * window.innerWidth);
         let y = Math.floor(Math.random() * window.innerHeight);
         let duration = Math.random() * 10;
@@ -79,8 +86,10 @@ audio.addEventListener("play", ()=> {
     let time_sec = Math.floor(audio.duration) %60
     total_duration.innerHTML =`${time_min}:${time_sec}`;
 })
+
 audio.addEventListener("pause", ()=> {
     rotate_img.classList.add("paused_ani");
+   
 })
 //Update Progress_Bar:
 audio.addEventListener("timeupdate", ()=>{
